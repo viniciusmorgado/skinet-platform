@@ -1,0 +1,39 @@
+.spacer-left {
+    flex: 1 1 auto;
+  }
+  
+  .center-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    a {
+      margin: 0 20px;
+    }
+  }
+  
+  .spacer-right {
+    flex: 1 1 auto;
+  }
+  
+  .right-links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  
+    a {
+      margin-left: 20px;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .center-links,
+    .right-links {
+      display: none;
+    }
+  
+    button[mat-icon-button] {
+      display: block;
+    }
+  }
+  
