@@ -69,6 +69,11 @@
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "sslCert": "ssl/skinet-platform.com+4.pem",
+            "sslKey": "ssl/skinet-platform.com+4-key.pem",
+            "ssl": true
+          },
           "configurations": {
             "production": {
               "buildTarget": "skinet-platform:build:production"
@@ -105,5 +110,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "01eddce7-486c-42b4-ac4b-420825d977e3"
   }
 }
