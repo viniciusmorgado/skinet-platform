@@ -35,4 +35,21 @@
   button[mat-icon-button] {
     display: block;
   }
+
+  img {
+    height: 60px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+.mat-toolbar {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 3px 6px 0 rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  border-radius: 4px;
+  background-color: white;
+
+  img {
+    height: 80px;
+  }
 }

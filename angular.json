@@ -39,7 +39,7 @@
               }
             ],
             "styles": [
-              "@angular/material/prebuilt-themes/magenta-violet.css",
+              "@angular/material/prebuilt-themes/azure-blue.css",
               "node_modules/font-awesome/css/font-awesome.min.css",
               "src/styles.scss"
             ],
@@ -74,7 +74,7 @@
           "options": {
             "sslCert": "ssl/skinet-platform.com+4.pem",
             "sslKey": "ssl/skinet-platform.com+4-key.pem",
-            "ssl": true
+            "ssl": false
           },
           "configurations": {
             "production": {
