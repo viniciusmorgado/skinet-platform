@@ -10,6 +10,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatMenuModule } from '@angular/material/menu';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatIconModule } from '@angular/material/icon';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   // TODO: New components need to be declared inside the declarations array
@@ -21,7 +22,8 @@ import { MatIconModule } from '@angular/material/icon';
     MatButtonModule, 
     MatMenuModule, 
     FlexLayoutModule, 
-    MatIconModule
+    MatIconModule,
+    HttpClientModule
   ],
   providers: [provideAnimationsAsync()],
   // TODO: Define which component will bootstrap the application tree (of components)
