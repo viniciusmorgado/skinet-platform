@@ -14,8 +14,9 @@ import { ShopModule } from './shop/shop.module';
     AppRoutingModule,
     HttpClientModule,
     NucleonModule,
-    ShopModule,
+    ShopModule
   ],
+  exports: [],
   providers: [provideAnimationsAsync()],
   bootstrap: [AppComponent],
 })

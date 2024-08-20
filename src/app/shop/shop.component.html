@@ -1,5 +1,13 @@
-<ul>
-  <li class="list-unstyled" *ngFor="let product of products">
-    {{ product.name }}
-  </li>
-</ul>
+<div class="container">
+  <div fxLayout="row">
+    <section fxFlex="25">Filters</section>
+    <section fxFlex="75">
+      <mat-grid-list cols="2" rowHeight="3:1">
+        <mat-grid-tile>1</mat-grid-tile>
+        <mat-grid-tile>2</mat-grid-tile>
+        <mat-grid-tile>3</mat-grid-tile>
+        <mat-grid-tile>4</mat-grid-tile>
+      </mat-grid-list>
+    </section>
+  </div>
+</div>

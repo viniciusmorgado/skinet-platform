@@ -1,4 +1,7 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { IProduct } from './shared/models/product';
+import { Pagination } from './shared/models/pagination';
 
 @Component({
   selector: 'app-root',
@@ -8,9 +11,7 @@ import { Component, OnInit } from '@angular/core';
 export class AppComponent implements OnInit {
   title = 'Skinet';
 
-  constructor() {}
-  
-  ngOnInit(): void {
-   
-  }
+  constructor(private http: HttpClient) {}
+
+  ngOnInit(): void {}
 }
