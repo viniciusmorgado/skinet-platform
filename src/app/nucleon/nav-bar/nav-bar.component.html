@@ -1,6 +1,8 @@
 <mat-toolbar class="mat-toolbar" color="primary">
-  
-  <img src="assets/images/logo.png" alt="Skinet Core company logo with the title 'Skinet Core' and subtitle 'Snow Sports Gears'">
+  <img
+    src="assets/images/logo.png"
+    alt="Skinet Core company logo with the title 'Skinet Core' and subtitle 'Snow Sports Gears'"
+  />
 
   <span class="spacer-left"></span>
 
@@ -13,12 +15,22 @@
   <span class="spacer-right"></span>
 
   <div class="right-links" fxHide fxShow.gt-xs>
-    <a mat-button routerLink="/cart" aria-label="Cart page"><mat-icon aria-hidden="true">shopping_cart</mat-icon> Cart</a>
+    <a mat-button routerLink="/cart" aria-label="Cart page"
+      ><mat-icon aria-hidden="true">shopping_cart</mat-icon> Cart</a
+    >
     <a mat-button routerLink="/login" aria-label="Login page">Login</a>
-    <a mat-button routerLink="/signup" aria-label="Sign up page"><mat-icon aria-hidden="true">logout</mat-icon> Sign up</a>
+    <a mat-button routerLink="/signup" aria-label="Sign up page"
+      ><mat-icon aria-hidden="true">logout</mat-icon> Sign up</a
+    >
   </div>
 
-  <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Menu" fxShow fxHide.gt-xs>
+  <button
+    mat-icon-button
+    [matMenuTriggerFor]="menu"
+    aria-label="Menu"
+    fxShow
+    fxHide.gt-xs
+  >
     <mat-icon aria-hidden="true">menu</mat-icon>
   </button>
 </mat-toolbar>
@@ -26,8 +38,14 @@
 <mat-menu #menu="matMenu">
   <button mat-menu-item routerLink="/" aria-label="Home page">Home</button>
   <button mat-menu-item routerLink="/shop" aria-label="Shop page">Shop</button>
-  <button mat-menu-item routerLink="/error" aria-label="Error page">Error</button>
+  <button mat-menu-item routerLink="/error" aria-label="Error page">
+    Error
+  </button>
   <button mat-menu-item routerLink="/cart" aria-label="Cart page">Cart</button>
-  <button mat-menu-item routerLink="/login" aria-label="Login page">Login</button>
-  <button mat-menu-item routerLink="/signup" aria-label="Sign up page">Sign up</button>
+  <button mat-menu-item routerLink="/login" aria-label="Login page">
+    Login
+  </button>
+  <button mat-menu-item routerLink="/signup" aria-label="Sign up page">
+    Sign up
+  </button>
 </mat-menu>
