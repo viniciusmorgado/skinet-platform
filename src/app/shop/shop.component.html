@@ -1,37 +1,42 @@
-<div fxLayout="row">
-  <section fxFlex="25" class="shoppingSection">
-    <div class="filters">
-      <h5>Brands</h5>
-      <mat-selection-list>
-        <mat-list-option *ngFor="let brand of brands">
-          {{ brand.name }}
-        </mat-list-option>
-      </mat-selection-list>
-    </div>
-    <div class="filters">
-      <h5>Types</h5>
-      <mat-selection-list>
-        <mat-list-option *ngFor="let type of types">
-          {{ type.name }}
-        </mat-list-option>
-      </mat-selection-list>
-    </div>
-  </section>
-  <section fxFlex="75" class="shoppingSection">
-    <div fxLayout="row" fxLayoutAlign="space-between center">
-      <span>Showing <strong>10</strong> of <strong>18</strong> results</span>
-      <div class="search">
-        <mat-form-field>
-          <mat-label>Search</mat-label>
-          <input matInput placeholder="Ex. skiboards" />
-        </mat-form-field>
+<div>
+  <div fxLayout="row">
+    <section fxFlex="25" class="filters-section">
+      <div class="filters">
+        <div>
+          <h4>Sort</h4>
+          <mat-form-field>
+            <mat-label>filter by</mat-label>
+            <mat-select>
+              <mat-option>Alphabetical</mat-option>
+              <mat-option>Price: Low to high</mat-option>
+              <mat-option>Price: High to low</mat-option>
+            </mat-select> </mat-form-field
+          ><br />
+          <mat-form-field>
+            <mat-label>Search</mat-label>
+            <input matInput placeholder="Ex. skiboards" />
+          </mat-form-field>
+        </div>
+
+        <h5>Brands</h5>
+        <mat-selection-list>
+          <mat-list-option *ngFor="let brand of brands">
+            {{ brand.name }}
+          </mat-list-option>
+        </mat-selection-list>
+
+        <h5>Types</h5>
+        <mat-selection-list>
+          <mat-list-option *ngFor="let type of types">
+            {{ type.name }}
+          </mat-list-option>
+        </mat-selection-list>
       </div>
-    </div>
-    <mat-grid-list cols="2" rowHeight="3:1">
-      <mat-grid-tile>Product 1</mat-grid-tile>
-      <mat-grid-tile>Product 2</mat-grid-tile>
-      <mat-grid-tile>Product 3</mat-grid-tile>
-      <mat-grid-tile>Product 4</mat-grid-tile>
-    </mat-grid-list>
-  </section>
+    </section>
+
+    <section fxFlex="75" class="shoppingSection">
+      <span>Showing <strong>10</strong> of <strong>18</strong> results</span>
+      <app-product-item></app-product-item>
+    </section>
+  </div>
 </div>
