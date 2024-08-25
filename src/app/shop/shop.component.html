@@ -1,42 +1,54 @@
-<div>
+<div class="shop-root">
   <div fxLayout="row">
-    <section fxFlex="25" class="filters-section">
-      <div class="filters">
-        <div>
-          <h4>Sort</h4>
-          <mat-form-field>
-            <mat-label>filter by</mat-label>
-            <mat-select>
-              <mat-option>Alphabetical</mat-option>
-              <mat-option>Price: Low to high</mat-option>
-              <mat-option>Price: High to low</mat-option>
-            </mat-select> </mat-form-field
-          ><br />
-          <mat-form-field>
-            <mat-label>Search</mat-label>
-            <input matInput placeholder="Ex. skiboards" />
-          </mat-form-field>
-        </div>
-
+    <div class="filters">
+      <section fxFlex="25">
+        <h4>Sort</h4>
+        <mat-form-field>
+          <mat-label>filter by</mat-label>
+          <mat-select>
+            <mat-option>Alphabetical</mat-option>
+            <mat-option>Price: Low to high</mat-option>
+            <mat-option>Price: High to low</mat-option>
+          </mat-select>
+        </mat-form-field>
+        <!-- TODO: This br here is not a good ideia -->
+        <br />
+        <mat-form-field>
+          <mat-label>Search</mat-label>
+          <input matInput placeholder="Ex. skiboards" />
+        </mat-form-field>
         <h5>Brands</h5>
         <mat-selection-list>
           <mat-list-option *ngFor="let brand of brands">
             {{ brand.name }}
           </mat-list-option>
         </mat-selection-list>
-
         <h5>Types</h5>
         <mat-selection-list>
           <mat-list-option *ngFor="let type of types">
             {{ type.name }}
           </mat-list-option>
         </mat-selection-list>
-      </div>
-    </section>
+      </section>
+    </div>
 
     <section fxFlex="75" class="shoppingSection">
+      
       <span>Showing <strong>10</strong> of <strong>18</strong> results</span>
-      <app-product-item></app-product-item>
+      
+      <mat-grid-list cols="3">
+        
+        <mat-grid-tile *ngFor="let product of products">
+          <app-product-item
+            class="product-item"
+            [product]="product"
+          ></app-product-item>
+        </mat-grid-tile>
+      
+      </mat-grid-list>
+    
     </section>
   </div>
+
+
 </div>

@@ -1,53 +1,35 @@
+.shop-root {
+  padding-top: 50px;
+  padding-left: 380px;
+  padding-right: 380px;
+  padding-bottom: 50px;
+}
+
+// Filters Section
 .search {
+  display: flexbox;
+  justify-content: flex-start;
+  border-radius: 5px;
+}
+
+.input {
   display: flexbox;
   justify-content: flex-start;
 }
 
-.input {
-  width: 300px;
-}
-
-.shoppingSection {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-right: 380px;
-  margin-left: 10px;
-}
-
-.filters-section {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-right: 10px;
-  margin-left: 380px;
-}
-
 .filters {
-  margin-bottom: 30px;
-  margin-right: 10px;
-  height: 50px;
-  width: 900px;
+  margin-right: 50px;
 }
 
-.filters-itens {
-  padding-right: 10px;
-}
-
-// Filters for brands and types
 mat-list-option {
   padding: 0;
-  margin: 0px;
+  margin: 0;
   border: 0;
   width: 300px;
-  height: 50;
+  height: 50px;
 }
 
-// Filter by and search
 mat-form-field {
   width: 300px;
   height: 50;
 }
-
-// mat-selection-list {
-//   width: 100px;
-//   height: 100px;
-// }

@@ -12,6 +12,7 @@ import { IBrand } from '../shared/models/brand';
 export class ShopComponent implements OnInit {
   types: IType[] = [];
   brands: IBrand[] = [];
+  products: IProduct[] = [];
 
   constructor(private shopService: ShopService) {}
 
@@ -23,6 +24,11 @@ export class ShopComponent implements OnInit {
 
     this.shopService.getBrands().subscribe({
       next: (response) => (this.brands = response),
+      error: (error) => console.log(error),
+    });
+
+    this. shopService.getProducts().subscribe({
+      next: (response) => (this.products = response.data),
       error: (error) => console.log(error),
     });
   }

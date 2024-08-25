@@ -1,26 +1,12 @@
-<mat-grid-list cols="2" rowHeight="3:1">
-  <mat-grid-tile *ngFor="let product of products">
-    <mat-card class="card" appearance="outlined">
-      <mat-card-header>
-        <div mat-card-avatar class="card-header-image"></div>
-        <mat-card-title>{{ product.name }}</mat-card-title>
-        <mat-card-subtitle>{{ product.price }}</mat-card-subtitle>
-      </mat-card-header>
-      <!-- {{ product.pictureUrl }} -->
-      <img
-        mat-card-image
-        src="https://material.angular.io/assets/img/examples/shiba2.jpg"
-        alt="Photo of a Shiba Inu"
-      />
-      <mat-card-content>
-        <p>
-          {{ product.description }}
-        </p>
-      </mat-card-content>
-      <mat-card-actions>
-        <button mat-button>Cart</button>
-        <button mat-button>Share</button>
-      </mat-card-actions>
-    </mat-card>
-  </mat-grid-tile>
-</mat-grid-list>
+<mat-card class="mat-elevation-z3"> 
+  <img mat-card-image src="" alt="Placeholder image" style="max-width: 109%; width: auto; height: auto;"> 
+  <mat-card-content>
+      <p>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+  </mat-card-content>
+  <mat-card-actions>
+      <button mat-button>View</button>
+      <button mat-button>Edit</button>
+      <span class="spacer"></span>
+      <span class="text-body-secondary">9 mins</span>
+  </mat-card-actions>
+</mat-card>

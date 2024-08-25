@@ -28,3 +28,5 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 
 ng new skinet-platform --no-standalone
+
+https://skinet.trycatchlearn.com/
